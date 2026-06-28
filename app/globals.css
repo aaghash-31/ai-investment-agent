@@ -1,26 +1,58 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: #0A0F1E;
+  --bg-card: #1E2A3B;
+  --bg-card-hover: #243246;
+  --border: #2A3A52;
+  --text-primary: #F8F9FF;
+  --text-secondary: #8A9BB8;
+  --text-muted: #4A5E7A;
+  --accent-buy: #10B981;
+  --accent-cautious-buy: #F59E0B;
+  --accent-hold: #6B7280;
+  --accent-cautious-pass: #F97316;
+  --accent-pass: #EF4444;
+  --accent-blue: #3B82F6;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+* { box-sizing: border-box; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
 }
+
+.font-display { font-family: 'Playfair Display', serif; }
+
+/* Verdict stamp colors */
+.verdict-buy         { color: var(--accent-buy); }
+.verdict-cautious_buy { color: var(--accent-cautious-buy); }
+.verdict-hold        { color: var(--accent-hold); }
+.verdict-cautious_pass { color: var(--accent-cautious-pass); }
+.verdict-pass        { color: var(--accent-pass); }
+
+.verdict-bg-buy          { background: rgba(16,185,129,0.1); border-color: var(--accent-buy); }
+.verdict-bg-cautious_buy { background: rgba(245,158,11,0.1); border-color: var(--accent-cautious-buy); }
+.verdict-bg-hold         { background: rgba(107,114,128,0.1); border-color: var(--accent-hold); }
+.verdict-bg-cautious_pass { background: rgba(249,115,22,0.1); border-color: var(--accent-cautious-pass); }
+.verdict-bg-pass         { background: rgba(239,68,68,0.1); border-color: var(--accent-pass); }
+
+/* Card base */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
