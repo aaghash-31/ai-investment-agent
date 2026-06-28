@@ -2,7 +2,7 @@
 
 > An autonomous multi-agent investment research system built with LangGraph.js and Next.js. Analyzes companies across fundamental, technical, news/macro, and governance dimensions — then synthesizes everything into one honest, confidence-calibrated verdict personalized for the investor.
 
-**Live demo:** https://your-vercel-url.vercel.app
+**Live demo:** https://ai-investment-agent-beta.vercel.app/
 
 ---
 
@@ -42,20 +42,20 @@ Verdict + Full Report
 
 ## Features
 
-- 🔍 **9-Node LangGraph Pipeline** — structured multi-step reasoning, not a single prompt
-- 📊 **Fundamental Analysis** — revenue growth, margins, ROE/ROCE, debt ratios, cash flow quality, promoter holding (India-specific via Screener.in)
-- 📈 **Technical Analysis** — MA/EMA crossovers, RSI (Wilder's smoothing), volume confirmation, support/resistance
-- 🧠 **Smart Money Concepts** — market structure (bullish/bearish/ranging), Break of Structure (BOS), Change of Character (CHoCH), liquidity zones — labeled as supplementary timing lens
-- 🌍 **News & Macro Layer** — sentiment trend + geopolitical events mapped to sector sensitivities (crude oil, RBI policy, USD/INR, H-1B, etc.)
-- 🐂 **Bull/Bear Debate** — independent cases argued before synthesis, not averaged
-- 💀 **Pre-Mortem** — stress-tests the investment assuming it was already made
-- 🎯 **Computed Confidence Score** — derived from bull/bear disagreement, signal alignment, and data completeness — not hardcoded
-- 👤 **Capital-Aware Personalization** — affordability, position sizing, liquidity flags, concentration checks against existing holdings
-- ⚖️ **Peer-Relative Scoring** — metrics judged against sector context, not hardcoded universal thresholds
-- 📋 **Paper Trading** — log calls at verdict time, track hypothetical P&L
-- 👀 **Watchlist** — save companies, re-research with one click
-- 📜 **Append-Only Track Record** — every verdict logged permanently, wins and losses, nothing hidden
-- 🗣️ **Plain English Mode** — same analysis, beginner-friendly language
+-  **9-Node LangGraph Pipeline** — structured multi-step reasoning, not a single prompt
+-  **Fundamental Analysis** — revenue growth, margins, ROE/ROCE, debt ratios, cash flow quality, promoter holding (India-specific via Screener.in)
+-  **Technical Analysis** — MA/EMA crossovers, RSI (Wilder's smoothing), volume confirmation, support/resistance
+-  **Smart Money Concepts** — market structure (bullish/bearish/ranging), Break of Structure (BOS), Change of Character (CHoCH), liquidity zones — labeled as supplementary timing lens
+-  **News & Macro Layer** — sentiment trend + geopolitical events mapped to sector sensitivities (crude oil, RBI policy, USD/INR, H-1B, etc.)
+-  **Bull/Bear Debate** — independent cases argued before synthesis, not averaged
+-  **Pre-Mortem** — stress-tests the investment assuming it was already made
+-  **Computed Confidence Score** — derived from bull/bear disagreement, signal alignment, and data completeness — not hardcoded
+-  **Capital-Aware Personalization** — affordability, position sizing, liquidity flags, concentration checks against existing holdings
+-  **Peer-Relative Scoring** — metrics judged against sector context, not hardcoded universal thresholds
+-  **Paper Trading** — log calls at verdict time, track hypothetical P&L
+-  **Watchlist** — save companies, re-research with one click
+-  **Append-Only Track Record** — every verdict logged permanently, wins and losses, nothing hidden
+-  **Plain English Mode** — same analysis, beginner-friendly language
 
 ---
 
