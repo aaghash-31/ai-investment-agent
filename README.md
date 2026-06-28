@@ -295,6 +295,6 @@ ai-investment-agent/
 
 This project was built in collaboration with Claude (Anthropic). The full conversation transcript — covering architecture decisions, feature ideation, node-by-node implementation, debugging, and design choices — is available at:
 
-[Link to conversation or attached transcript]
+https://claude.ai/share/7605dac9-d2da-4bba-b8d6-142005b7ba6c
 
 This transcript demonstrates the thought process, trade-off reasoning, and iterative debugging approach used throughout the build.
